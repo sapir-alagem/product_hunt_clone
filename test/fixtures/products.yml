@@ -1,9 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  tagline: MyString
-
-two:
-  name: MyString
-  tagline: MyString
+skello:
+  name: "Skello"
+  tagline: "Manage your staff calendar"
+roadstr:
+  name: "Roadstr"
+  tagline: "Rent a vintage car"
