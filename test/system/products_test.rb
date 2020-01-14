@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class ProductsTest < ApplicationSystemTestCase
   test "visiting the index" do
-    visit "/"
+    visit "products/index"
     assert_selector "h1", text: "List of Awesome Products"
     assert_selector ".card-product", count: Product.count
   end
@@ -21,6 +21,7 @@ class ProductsTest < ApplicationSystemTestCase
     # Should be redirected to Home with new product
     assert_equal root_path, page.current_path
     assert_text "Change your life: Learn to code"
+    # save_and_open_screenshot
   end
 
   test "prevent user from creating product with no name" do
